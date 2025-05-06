@@ -492,6 +492,8 @@
 // Custom board
 //
 
+#define BOARD_MY                      9997  // Custom pins definition for development and/or rare boards
+
 #define BOARD_CUSTOM                  9998  // Custom pins definition for development and/or rare boards
 
 //
