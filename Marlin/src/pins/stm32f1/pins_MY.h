@@ -72,20 +72,17 @@
 #define BTN_ENC        PC13
 
 // SDCard
+#define MISO_PIN       PA6
+#define MOSI_PIN       PA7
+#define SCK_PIN        PA5
 #define SDSS           PA4
-#define SD_DETECT_PIN -1
-#define KILL_PIN      -1
+#define SD_DETECT_PIN  -1
+#define KILL_PIN       -1
 
-// LCD REPRAP_DISCOUNT_SMART_CONTROLLER
-//#define LCD_PINS_RS         PB12
-//#define LCD_PINS_ENABLE     PB13
-//#define LCD_PINS_D4         PB14
-//#define LCD_PINS_D5         PA3
-//#define LCD_PINS_D6         PB10
-//#define LCD_PINS_D7         PB11
+// BEEPER
+#define BEEPER_PIN     PB1
 
 //MKS_MINI_12864
-//
 #define DOGLCD_CS     PA3
 #define DOGLCD_A0     PB10
 
