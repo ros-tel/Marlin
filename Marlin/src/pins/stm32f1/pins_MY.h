@@ -49,22 +49,21 @@
 #define X_STEP_PIN     PB7
 #define X_DIR_PIN      PB6
 #define X_ENABLE_PIN   PB9
+#define X_CS_PIN       PB8
 
 #define Y_STEP_PIN     PA8
 #define Y_DIR_PIN      PB15
 #define Y_ENABLE_PIN   PA10
+#define Y_CS_PIN       PA9
 
-//#define TMC_USE_SW_SPI
+// Software SPI pins for TMC2130 stepper drivers
+#define TMC_USE_SW_SPI
 #define TMC_SPI_MOSI   PB5
 #define TMC_SPI_MISO   PB4
 #define TMC_SPI_SCK    PB3
 
-#define X_CS_PIN       PB8
-#define Y_CS_PIN       PA9
-
 // Laser PWM
 #define SPINDLE_LASER_PWM_PIN PB14
-
 
 //Encoder
 #define BTN_EN1        PA1
@@ -85,20 +84,10 @@
 #define BEEPER_PIN     PB11
 
 // MKS_MINI_12864
-#define DOGLCD_CS     PB10
-#define DOGLCD_A0     PB1
-
-#define NEOPIXEL_PIN  PA3
-
- // GLCD features
- //
- //#define LCD_CONTRAST   190
-
- // Uncomment screen orientation
- //
- //#define LCD_SCREEN_ROT_90
- //#define LCD_SCREEN_ROT_180
- //#define LCD_SCREEN_ROT_270
-
+#define DOGLCD_CS         PB10
+#define DOGLCD_A0         PB1
+#define LCD_RESET_PIN     PB0
+#define LCD_BACKLIGHT_PIN -1
+#define NEOPIXEL_PIN      PA3
 
 #define DISABLE_JTAG
