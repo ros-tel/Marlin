@@ -71,10 +71,14 @@
 #define BTN_ENC        PC15
 
 // SDCard
+#define ONBOARD_SPI_DEVICE 1   // SPI1 -> used only by HAL/STM32F1...
+#define ONBOARD_SD_CS_PIN  PA4 // Chip select for "System" SD card
+//
+#define ENABLE_SPI1
 #define MISO_PIN       PA6
 #define MOSI_PIN       PA7
 #define SCK_PIN        PA5
-#define SDSS           PA4
+#define SDSS           ONBOARD_SD_CS_PIN
 #define SD_DETECT_PIN  -1
 
 // KILL BUTTON
