@@ -63,7 +63,8 @@
 #define TMC_SPI_SCK    PB3
 
 // Laser PWM
-#define SPINDLE_LASER_PWM_PIN PB14
+// #define SPINDLE_LASER_PWM_PIN PB14
+#define SPINDLE_LASER_ENA_PIN PB14
 
 //Encoder
 #define BTN_EN1        PA1
