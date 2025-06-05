@@ -540,6 +540,8 @@
   #include "stm32f1/pins_GTM32_REV_B.h"             // STM32F1                              env:STM32F103VE env:STM32F103VE_GTM32_maple
 #elif MB(MORPHEUS)
   #include "stm32f1/pins_MORPHEUS.h"                // STM32F1                              env:STM32F103RE env:STM32F103RE_maple
+#elif MB(MY)
+  #include "stm32f1/pins_MY.h"                      // STM32F1                              env:STM32F103CB_my
 #elif MB(CHITU3D)
   #include "stm32f1/pins_CHITU3D.h"                 // STM32F1                              env:STM32F103ZE env:STM32F103RE_maple
 #elif MB(MKS_ROBIN)
