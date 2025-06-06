@@ -3386,8 +3386,8 @@
     #define SPINDLE_CHANGE_DIR_STOP            // Enable if the spindle should stop before changing spin direction
     #define SPINDLE_INVERT_DIR          false  // Set to "true" if the spin direction is reversed
 
-    #define SPINDLE_LASER_POWERUP_DELAY   5000 // (ms) Delay to allow the spindle/laser to come up to speed/power
-    #define SPINDLE_LASER_POWERDOWN_DELAY 5000 // (ms) Delay to allow the spindle to stop
+    #define SPINDLE_LASER_POWERUP_DELAY   50 // (ms) Delay to allow the spindle/laser to come up to speed/power
+    #define SPINDLE_LASER_POWERDOWN_DELAY 50 // (ms) Delay to allow the spindle to stop
 
     /**
      * M3/M4 Power Equation
@@ -3400,9 +3400,9 @@
      */
     #if ENABLED(SPINDLE_LASER_USE_PWM)
       #define SPEED_POWER_INTERCEPT       0    // (%) 0-100 i.e., Minimum power percentage
-      #define SPEED_POWER_MIN           100    // (RPM)
+      #define SPEED_POWER_MIN             0    // (RPM)
       #define SPEED_POWER_MAX          1000    // (RPM) SuperPID router controller 0 - 30,000 RPM
-      #define SPEED_POWER_STARTUP       500    // (RPM) M3/M4 speed/power default (with no arguments)
+      #define SPEED_POWER_STARTUP       800    // (RPM) M3/M4 speed/power default (with no arguments)
     #endif
 
   #else

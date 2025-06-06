@@ -63,8 +63,8 @@
 #define TMC_SPI_SCK    PB3
 
 // Laser PWM
-// #define SPINDLE_LASER_PWM_PIN PB14
-#define SPINDLE_LASER_ENA_PIN PB14
+#define SPINDLE_LASER_PWM_PIN PA0
+#define SPINDLE_LASER_ENA_PIN PB14 // Not connect
 
 //Encoder
 #define BTN_EN1        PA1
@@ -81,9 +81,6 @@
 #define SCK_PIN        PA5
 #define SDSS           ONBOARD_SD_CS_PIN
 #define SD_DETECT_PIN  -1
-
-// KILL BUTTON
-#define KILL_PIN       PA0
 
 // BEEPER
 #define BEEPER_PIN     PB11
